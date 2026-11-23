@@ -1,0 +1,560 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #17324d;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* NAVEGACIÓN */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+
+nav a:hover {
+    color: #00c3ff;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* SECCIONES */
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #17324d;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background-color: #17324d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* PASO 4: SELECTORES CSS */
+
+/* 1. Selector universal */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Selector de etiqueta */
+p {
+    font-size: 16px;
+}
+
+/* 3. Selector de clase */
+.destacado {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* 4. Selector de ID */
+#nosotros {
+    border-left: 5px solid #00b4d8;
+}
+
+/* 5. Selector agrupado */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+/* 6. Selector descendiente */
+section p {
+    line-height: 1.8;
+}
+
+/* 7. Selector hijo directo */
+nav > a {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* 8. Selector hermano adyacente */
+h2 + p {
+    color: #555555;
+}
+
+/* 9. Selector de hermanos generales */
+h2 ~ p {
+    letter-spacing: 0.5px;
+}
+
+/* PASO 5: PSEUDOCLASES CSS */
+
+/* 1. Efecto al pasar el cursor */
+a:hover {
+    color: #00b4d8;
+    text-decoration: underline;
+}
+
+/* 2. Efecto al presionar el botón */
+button:active {
+    background-color: #17324d;
+    color: white;
+}
+
+/* 3. Efecto al seleccionar un campo */
+input:focus {
+    border: 2px solid #00b4d8;
+    background-color: #eaf7fc;
+    outline: none;
+}
+
+/* 4. Primer elemento de la lista */
+.lista-productos li:first-child {
+    color: green;
+}
+
+/* 5. Último elemento de la lista */
+.lista-productos li:last-child {
+    color: red;
+}
+
+/* 6. Segundo elemento de la lista */
+.lista-productos li:nth-child(2) {
+    background-color: #eeeeee;
+}
+
+/* ESTILOS PARA LOS ELEMENTOS NUEVOS */
+
+.lista-productos {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.lista-productos li {
+    padding: 10px;
+}
+
+#servicios h3 {
+    margin-top: 20px;
+    color: #17324d;
+}
+
+input {
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* PASO 6: COLORES, FUENTES Y TEXTO */
+
+/* Colores generales en formato HEX */
+body {
+    color: #333333;
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Título principal con color RGB */
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Estilos de los párrafos */
+p {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+/* Títulos secundarios */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Clase destacada con color HSL */
+.destacado {
+    color: hsl(200, 100%, 35%);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Personalización de enlaces */
+#servicios a {
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Efecto visual de los enlaces */
+#servicios a:hover {
+    color: hsl(190, 100%, 40%);
+    text-decoration: underline;
+}
+
+/* PASO 7: FONDOS CSS */
+
+/* Imagen de fondo del encabezado */
+.encabezado {
+    background-image: linear-gradient(
+        rgba(10, 30, 55, 0.25),
+        rgba(10, 30, 55, 0.25)
+    ), url("../imagenes/fondo.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 220px;
+    padding: 40px 25px;
+    text-align: center;
+    opacity: 1;
+}
+
+/* Fondo de las secciones */
+section {
+    background-color: #ffffff;
+}
+
+/* Fondo del pie de página */
+footer {
+    background-color: #17324d;
+    color: white;
+}
+
+
+/* PASO 8: BORDES Y MÁRGENES */
+
+/* Bordes de las secciones */
+section {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dce8f2;
+    border-radius: 12px;
+
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Borde especial de la sección Nosotros */
+#nosotros {
+    border-left: 5px solid #00b4d8;
+}
+
+/* Tarjetas de productos */
+.tarjeta {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3498db;
+    border-radius: 12px;
+
+    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Bordes de imágenes */
+.galeria img {
+    border: 3px solid #17324d;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* PASO 9: PADDING, ALTURA Y ANCHURA */
+
+/* Contenedor principal */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    height: auto;
+
+    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin: 20px auto;
+}
+
+/* Dimensiones de las secciones */
+.contenedor section {
+    width: 100%;
+    min-height: 150px;
+    padding: 30px;
+}
+
+/* Dimensiones de las imágenes */
+.imagen {
+    width: 300px;
+    height: 200px;
+    min-width: 150px;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Espaciado interior de las tarjetas */
+.tarjeta {
+    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* PASO 10: ENLACES INTERNOS Y EXTERNOS */
+
+/* Lista de enlaces externos */
+.enlaces-externos {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.enlaces-externos li {
+    margin-bottom: 12px;
+}
+
+.enlaces-externos a {
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.enlaces-externos a:hover {
+    color: #00b4d8;
+    text-decoration: underline;
+}
+
+/* Contenedor de imágenes enlazadas */
+.imagenes-enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Imágenes que funcionan como enlaces */
+.imagenes-enlaces img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #00b4d8;
+    border-radius: 10px;
+}
+
+/* Efecto al pasar el cursor */
+.imagenes-enlaces img:hover {
+    opacity: 0.7;
+    border-color: #00b4d8;
+}
+
+/* PASO 11: GALERÍA DE IMÁGENES */
+
+/* Contenedor de la galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Estilos de las imágenes */
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    background-color: white;
+
+    margin: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.galeria img:hover {
+    opacity: 0.7;
+    border-color: #00b4d8;
+    transform: scale(1.05);
+}
+
+/* PASO 12: TABLA DE PRODUCTOS */
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+/* Encabezados */
+.tabla-productos th {
+    background-color: #17324d;
+    color: white;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+/* Celdas */
+.tabla-productos td {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+/* Filas alternadas */
+.tabla-productos tbody tr:nth-child(even) {
+    background-color: #eaf4fa;
+}
+
+/* Efecto al pasar el cursor */
+.tabla-productos tbody tr:hover {
+    background-color: #d5efff;
+}
+
+/* Adaptación a pantallas pequeñas */
+#catalogo {
+    overflow-x: auto;
+}
+
+/* PASO 13: FORMULARIO DE CONTACTO */
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f4f8fc;
+    border: 1px solid #dce8f2;
+    border-radius: 10px;
+}
+
+/* Etiquetas */
+#formulario-contacto label {
+    font-weight: bold;
+    color: #17324d;
+    margin-top: 8px;
+}
+
+/* Campos del formulario */
+#formulario-contacto input,
+#formulario-contacto select,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border: 1px solid #b8c8d8;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Pseudoclase focus */
+#formulario-contacto input:focus,
+#formulario-contacto select:focus,
+#formulario-contacto textarea:focus {
+    border: 2px solid #00b4d8;
+    outline: none;
+    background-color: #eefaff;
+}
+
+/* Contenedor de botones */
+.botones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Botones */
+.botones-formulario button {
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Efecto hover */
+.botones-formulario button:hover {
+    background-color: #005f91;
+}
+
+/* Efecto active */
+.botones-formulario button:active {
+    background-color: #17324d;
+}
+
+/* Botón limpiar */
+.botones-formulario .boton-limpiar {
+    background-color: #6c757d;
+}
+
+.botones-formulario .boton-limpiar:hover {
+    background-color: #495057;
+}
+
+
+
