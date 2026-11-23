@@ -21,6 +21,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#servicios">Productos</a>
+            <a href="#ofertas">Ofertas</a>
             <a href="#catalogo">Catálogo</a>
             <a href="#galeria">Galería</a>
             <a href="#contacto">Contacto</a>
@@ -103,6 +104,98 @@
             <a href="#contacto">
                 Solicitar información
             </a>
+
+        </section>
+
+        <!-- PASO 22: OFERTAS ESPECIALES -->
+        <section id="ofertas">
+
+            <h2>Ofertas especiales TechNova</h2>
+
+            <p>
+                Aprovecha nuestras promociones exclusivas
+                en productos tecnológicos seleccionados.
+            </p>
+
+            <div class="contenedor-ofertas">
+
+                <!-- OFERTA 1: LAPTOP -->
+                <article class="oferta">
+
+                    <span class="descuento">-20%</span>
+
+                    <img src="imagenes/laptop.jpeg"
+                         alt="Laptop tecnológica en oferta">
+
+                    <h3>Laptop tecnológica</h3>
+
+                    <p class="precio-anterior">
+                        $850.00
+                    </p>
+
+                    <p class="precio-oferta">
+                        $680.00
+                    </p>
+
+                    <a href="#contacto">
+                        Consultar oferta
+                    </a>
+
+                </article>
+
+                <!-- OFERTA 2: CELULAR -->
+                <article class="oferta">
+
+                    <span class="descuento">-15%</span>
+
+                    <img src="imagenes/celular.png"
+                         alt="Smartphone en oferta">
+
+                    <h3>Smartphone</h3>
+
+                    <p class="precio-anterior">
+                        $650.00
+                    </p>
+
+                    <p class="precio-oferta">
+                        $552.50
+                    </p>
+
+                    <a href="#contacto">
+                        Consultar oferta
+                    </a>
+
+                </article>
+
+                <!-- OFERTA 3: AUDÍFONOS -->
+                <article class="oferta">
+
+                    <span class="descuento">-10%</span>
+
+                    <img src="imagenes/audifonos.png"
+                         alt="Audífonos inalámbricos en oferta">
+
+                    <h3>Audífonos inalámbricos</h3>
+
+                    <p class="precio-anterior">
+                        $75.00
+                    </p>
+
+                    <p class="precio-oferta">
+                        $67.50
+                    </p>
+
+                    <a href="#contacto">
+                        Consultar oferta
+                    </a>
+
+                </article>
+
+            </div>
+
+            <p class="nota-ofertas">
+                Promociones demostrativas para fines académicos.
+            </p>
 
         </section>
 
@@ -231,83 +324,122 @@
 
         </section>
 
-        <!-- SECCIÓN DE CONTACTO -->
-       
-<!-- PASO 13: FORMULARIO DE CONTACTO -->
-<section id="contacto">
+        <!-- PASO 13: FORMULARIO DE CONTACTO -->
+        <section id="contacto">
 
-    <h2>Contáctanos</h2>
+            <h2>Contáctanos</h2>
 
-    <p>
-        ¿Tienes alguna pregunta sobre nuestros productos?
-        Completa el formulario y nos pondremos
-        en contacto contigo.
-    </p>
+            <p>
+                ¿Tienes alguna pregunta sobre nuestros productos?
+                Completa el formulario y nos pondremos
+                en contacto contigo.
+            </p>
 
-    <form id="formulario-contacto">
+            <form id="formulario-contacto">
 
-        <!-- NOMBRE -->
-        <label for="nombre">Nombre completo:</label>
-        <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingrese su nombre completo"
-            required>
+                <!-- NOMBRE -->
+                <label for="nombre">
+                    Nombre completo:
+                </label>
 
-        <!-- CORREO ELECTRÓNICO -->
-        <label for="correo">Correo electrónico:</label>
-        <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="ejemplo@correo.com"
-            required>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ingrese su nombre completo"
+                    required>
 
-        <!-- TELÉFONO -->
-        <label for="telefono">Teléfono:</label>
-        <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            placeholder="Ingrese su número de teléfono">
+                <!-- CORREO ELECTRÓNICO -->
+                <label for="correo">
+                    Correo electrónico:
+                </label>
 
-        <!-- PRODUCTO -->
-        <label for="producto">Producto de interés:</label>
-        <select id="producto" name="producto" required>
-            <option value="">Seleccione un producto</option>
-            <option value="laptop">Laptop</option>
-            <option value="celular">Celular</option>
-            <option value="audifonos">Audífonos</option>
-            <option value="teclado">Teclado</option>
-            <option value="mouse">Mouse</option>
-            <option value="tablet">Tablet</option>
-        </select>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required>
 
-        <!-- MENSAJE -->
-        <label for="mensaje">Mensaje:</label>
-        <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="5"
-            placeholder="Escriba su consulta aquí..."
-            required></textarea>
+                <!-- TELÉFONO -->
+                <label for="telefono">
+                    Teléfono:
+                </label>
 
-        <!-- BOTONES -->
-        <div class="botones-formulario">
-            <button type="submit">
-                Enviar consulta
-            </button>
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ingrese su número de teléfono">
 
-            <button type="reset" class="boton-limpiar">
-                Limpiar
-            </button>
-        </div>
+                <!-- PRODUCTO DE INTERÉS -->
+                <label for="producto">
+                    Producto de interés:
+                </label>
 
-    </form>
+                <select id="producto"
+                        name="producto"
+                        required>
 
-</section>
+                    <option value="">
+                        Seleccione un producto
+                    </option>
 
+                    <option value="laptop">
+                        Laptop
+                    </option>
+
+                    <option value="celular">
+                        Celular
+                    </option>
+
+                    <option value="audifonos">
+                        Audífonos
+                    </option>
+
+                    <option value="teclado">
+                        Teclado
+                    </option>
+
+                    <option value="mouse">
+                        Mouse
+                    </option>
+
+                    <option value="tablet">
+                        Tablet
+                    </option>
+
+                </select>
+
+                <!-- MENSAJE -->
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escriba su consulta aquí..."
+                    required></textarea>
+
+                <!-- BOTONES -->
+                <div class="botones-formulario">
+
+                    <button type="submit">
+                        Enviar consulta
+                    </button>
+
+                    <button type="reset"
+                            class="boton-limpiar">
+                        Limpiar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
 
     </main>
 
